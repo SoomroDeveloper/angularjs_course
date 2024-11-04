@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+   
+</head>
+<body>
+    <h1>::sir amjad::</h1>
+    <h2>::day2 Angular js</h2>
+    <ol>
+        <li>ng-module</li>
+        <li>ng-controller</li>
+        <li>ng-bind</li>
+    </ol>
+    <hr>
+ 
+
+
+    <div ng-app="myapp" ng-controller="myCtr">
+
+        {{firstname}}
+        {{lastname}}
+
+
+    <div  ng-controller="myCtr2">
+
+       <h1>firstname:{{firstname}}</h1>
+       <h1>lastname:{{lastname}}</h1>
+       <h1>Age:{{age}}</h1>
+
+
+    </div>
+
+    <div ng-bind="firstname+' '+lastname">
+
+    </div>
+
+
+
+    
+</div>
+    <script>
+      
+    var app =angular.module("myapp",[]); //create module
+     app.controller("myCtr",function($scope){
+        $scope.firstname="sir amjad"
+        $scope.lastname="soomro"
+
+     })
+
+
+   
+    //  var app =angular.module("myapp",[]); //create module
+     app.controller("myCtr2",function($scope){
+        $scope.firstname="sir amjad";
+        $scope.lastname="soomro";
+        $scope.age=28;
+
+
+
+
+    
+     })
+    </script>
+</body>
+</html>
